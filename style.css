@@ -50,11 +50,15 @@ nav a{
     text-decoration: none;
     margin: 0 15px;
     font-size: 18px;
-    font-weight: bold;
 }
 
 nav a:hover{
     text-decoration: underline;
+}
+
+nav a {
+    pointer-events: auto; /* Ensures links are clickable */
+    z-index: 10; /* Makes sure links are above other elements */
 }
 
 .hero{
@@ -81,7 +85,6 @@ nav a:hover{
 
 .hero h2{
     color: #6A7FDB; 
-    margin-top: 4rem;
 }
 
 .cta-button {
