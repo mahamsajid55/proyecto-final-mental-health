@@ -138,30 +138,7 @@ button:hover {
     background-color: #fcccfc;
 }
 
-/* Fade-in and Slide-up Animation */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
-/* Apply to All Sections */
-.mindfulness {
-    opacity: 0; /* Hide initially */
-    transform: translateY(30px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
-}
-
-/* When Section Comes into View */
-.mindfulness.show {
-    opacity: 1;
-    transform: translateY(0);
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {
