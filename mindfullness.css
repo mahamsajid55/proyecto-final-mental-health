@@ -1,0 +1,179 @@
+/* General Reset */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center; /* Centers inline elements */
+    padding-top: 80px;
+}
+
+/* Header & Navigation */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #6A7FDB; 
+    padding: 15px 0;
+    text-align: center;
+    color: white;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 20px 20px; /* Rounded bottom edges */
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Navigation Links */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover Effect */
+nav a:hover {
+    text-decoration: underline;
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Centered Content Box */
+.mindfulness {
+    max-width: 800px;
+    margin: 3rem auto;  /* Centers horizontally */
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content inside */
+}
+
+/* Headings */
+.mindfulness h2, .mindfulness h3 {
+    color:  #6A7FDB;
+    text-align: center;
+}
+
+/* Centered Lists */
+.mindfulness ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+/* List Items */
+.mindfulness li {
+    background: #fff;
+    padding: 10px;
+    margin: 5px 0;
+    border-left: 4px solid #4CAF50;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Centers and keeps consistent width */
+}
+
+/* Centered Table */
+.mindfulness table {
+    width: 80%;
+    margin: 20px auto; /* Centers table */
+    border-collapse: collapse;
+}
+
+.mindfulness table, th, td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 8px;
+}
+
+/* Centering Videos */
+.video-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.video-container iframe {
+    width: 560px;
+    height: 315px;
+    border-radius: 10px;
+}
+
+/* Centered Links */
+.mindfulness a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Centered Button */
+button {
+    background-color: #FFB6B9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    display: block;
+    margin: 10px auto; /* Centers button */
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #fcccfc;
+}
+
+/* Fade-in and Slide-up Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply to All Sections */
+.mindfulness {
+    opacity: 0; /* Hide initially */
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* When Section Comes into View */
+.mindfulness.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .video-container iframe {
+        width: 90%;
+    }
+
+    .mindfulness table {
+        width: 100%;
+    }
+
+    .mindfulness li {
+        width: 100%;
+    }
+}

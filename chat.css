@@ -1,84 +1,74 @@
-body {
-    font-family: Arial, sans-serif;
-    background: #FAF9F6;
-    text-align: center;
-    padding-top: 70px;
-}
-/* Minimal & Clean Theme */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #FAF9F6; /* Off White */
-    color: #3D3D3D; /* Dark Gray Text */
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    background: url('imsges/back.zip');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    text-align: center;
-    padding-top: 70px;
-}
-
+/* Header & Navigation */
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #6A7FDB; 
+    background-color: #6A7FDB; /* Soft Blue */
     padding: 15px 0;
     text-align: center;
     color: white;
     z-index: 1000;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
+    border-radius: 0 0 20px 20px; /* Rounded bottom edges */
 }
 
+/* Navigation Bar */
 nav {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 20px;
 }
 
+/* Navigation Links */
 nav a {
     color: white;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
-    padding: 10px;
+    padding: 10px 15px;
+    transition: color 0.3s ease, transform 0.2s ease;
 }
 
+/* Hover Effect */
 nav a:hover {
     text-decoration: underline;
+    transform: scale(1.05); /* Slight zoom effect */
 }
 
+/* Ensures links are clickable */
+nav a {
+    pointer-events: auto; 
+    z-index: 10; 
+}
+
+/* Prevent Header Overlapping Content */
 body {
-    padding-top: 70px;
+    padding-top: 80px;
 }
 
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
 
-nav a{
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-nav a:hover{
-    text-decoration: underline;
+    nav a {
+        display: block;
+        padding: 10px;
+        font-size: 16px;
+    }
 }
 
 /* Chatbot Container */
 .chat-container {
-    max-width: 400px;
-    margin: auto;
-    background: white;
+    max-width: 600px; 
+    width: 90%; 
+    margin: 100px auto; /* Pushes chatbot below the fixed header */
     padding: 20px;
+    background: white;
     border-radius: 15px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     animation: fadeIn 1s ease-in-out;
@@ -93,16 +83,17 @@ nav a:hover{
     margin-bottom: 10px;
 }
 
-/* Chat Box Styling */
+/* Chat Box */
 .chat-box {
     height: 300px;
     overflow-y: auto;
     border-bottom: 2px solid #ddd;
     padding: 10px;
     text-align: left;
+    scrollbar-width: thin;
 }
 
-/* Chat Message Styling */
+/* Chat Messages */
 .message {
     padding: 8px 12px;
     margin: 5px;
@@ -111,14 +102,6 @@ nav a:hover{
     display: inline-block;
     animation: slideIn 0.3s ease-out;
 }
-
-.chat-container {
-        margin-top: 10rem;
-        max-width: 600px; 
-        width: 90%; 
-        margin: 80px auto; 
-        padding: 20px;
-    }
 
 .user-message {
     background: #6A7FDB;
@@ -131,7 +114,7 @@ nav a:hover{
     color: black;
 }
 
-/* Input Area */
+/* Chat Input */
 .chat-input {
     display: flex;
     justify-content: space-between;
@@ -139,10 +122,11 @@ nav a:hover{
 }
 
 .chat-input input {
-    width: 85%;
+    width: 80%;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    font-size: 16px;
 }
 
 .chat-input button {

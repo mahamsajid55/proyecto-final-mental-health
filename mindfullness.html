@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindfullness</title>
+    <link rel="stylesheet" href="mindfullness.css">
+</head>
+<body>
+
+    <header>
+        <!-- Hamburger Menu Icon -->
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <nav>
+            <a href="index.html">🏠 Home</a>
+            <a href="journal.html">📖 Journal</a>
+            <a href="mood.html">😊 Mood Tracker</a>
+            <a href="exercises.html">🧘 Exercises</a>
+        </nav>
+    </header>
+
+    <section class="mindfulness">
+        <h2>🧘 Mindfulness & Meditation</h2>
+        <p>Discover the power of mindfulness to stay present, reduce stress, and boost mental clarity.</p>
+    
+        <!-- 🌬️ Breathing Exercises -->
+        <h3>🌬️ 3 Simple Breathing Exercises</h3>
+        <ul>
+            <li><strong>Box Breathing:</strong> Inhale for 4 seconds, hold for 4, exhale for 4, hold for 4.</li>
+            <li><strong>4-7-8 Breathing:</strong> Inhale for 4 seconds, hold for 7, exhale for 8.</li>
+            <li><strong>Alternate Nostril Breathing:</strong> Breathe in through one nostril, switch, and exhale.</li>
+        </ul>
+
+    </section>
+
+    <section class="mindfulness">
+    
+        <!-- 🎥 Guided Meditation Videos -->
+        <h3>🎥 Guided Meditation Videos</h3>
+        <p>Follow these guided meditations to relax and find balance.</p>
+        <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/inpok4MKVLM" 
+            frameborder="0" allowfullscreen>
+        </iframe>
+    
+        <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/6p_yaNFSYao" 
+            frameborder="0" allowfullscreen>
+        </iframe>
+    </section>
+    
+    <section class="mindfulness">
+        <!-- 🎧 Meditation Apps & Resources -->
+        <h3>🎧 Meditation Apps & Resources</h3>
+        <ul>
+            <li><a href="https://www.calm.com/" target="_blank">Calm - Sleep & Meditation</a></li>
+            <li><a href="https://www.headspace.com/" target="_blank">Headspace - Mindfulness Made Simple</a></li>
+            <li><a href="https://www.youtube.com/results?search_query=guided+meditation" target="_blank">YouTube Guided Meditations</a></li>
+            <li><a href="https://www.smilingmind.com.au/" target="_blank">Smiling Mind - Free Mindfulness</a></li>
+        </ul>
+    
+    </section>
+    
+    <section class="mindfulness">
+
+        <!-- 📅 7-Day Mindfulness Challenge -->
+        <h3>📅 7-Day Mindfulness Challenge</h3>
+        <p>Try these simple mindfulness activities each day:</p>
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Mindfulness Activity</th>
+            </tr>
+            <tr>
+                <td>Day 1</td>
+                <td>5 minutes of deep breathing</td>
+            </tr>
+            <tr>
+                <td>Day 2</td>
+                <td>Mindful eating (focus on taste, texture, smell)</td>
+            </tr>
+            <tr>
+                <td>Day 3</td>
+                <td>Take a mindful walk and observe nature</td>
+            </tr>
+            <tr>
+                <td>Day 4</td>
+                <td>Listen to a guided meditation</td>
+            </tr>
+            <tr>
+                <td>Day 5</td>
+                <td>Write down your emotions in a journal</td>
+            </tr>
+            <tr>
+                <td>Day 6</td>
+                <td>Limit social media & be fully present</td>
+            </tr>
+            <tr>
+                <td>Day 7</td>
+                <td>Express gratitude to someone special</td>
+            </tr>
+        </table>
+
+    </section>
+
+    <section class="mindfulness">
+
+        <!-- 🕰️ Mindfulness Timer -->
+        <h3>🕰️ Set a Mindfulness Timer</h3>
+        <p>Use this timer for meditation or deep breathing.</p>
+        <input type="number" id="timerInput" placeholder="Enter minutes">
+        <button onclick="startTimer()">Start Timer</button>
+        <p id="timerDisplay"></p>
+
+        </section>
+
+        <section class="mindfulness">
+        <!-- 🌟 Daily Mindfulness Quote -->
+        <h3>🌟 Daily Mindfulness Quote</h3>
+        <blockquote id="mindfulnessQuote">Click below to get a quote!</blockquote>
+        <button onclick="generateQuote()">Get a Quote</button>
+
+    </section>
+
+    <script src="mindfullness.js"></script>
+</body>
+</html>

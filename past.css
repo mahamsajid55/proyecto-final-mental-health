@@ -1,0 +1,357 @@
+/* Header & Navigation */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #6A7FDB; /* Soft Blue */
+    padding: 15px 0;
+    text-align: center;
+    color: white;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 20px 20px; /* Rounded bottom edges */
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Navigation Links */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover Effect */
+nav a:hover {
+    text-decoration: underline;
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Ensures links are clickable */
+nav a {
+    pointer-events: auto; 
+    z-index: 10; 
+}
+
+/* Prevent Header Overlapping Content */
+body {
+    padding-top: 80px;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+
+
+/* Posicionar el ícono de hamburguesa debajo del logo */
+.hamburger {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none; /* Ocultar en pantallas grandes */
+    position: relative; /* Para que respete el flujo del diseño */
+    margin-top: 10px;
+}
+
+/* Estilos del Menú */
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+/* Ocultar el botón Back por defecto */
+.back-option {
+    display: none;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column; /* Para que el logo esté arriba y la hamburguesa abajo */
+        align-items: center;
+    }
+
+    .hamburger {
+        display: block;
+        margin-top: 10px; /* Espacio entre logo y hamburguesa */
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px; /* Espacio para no chocar con el header */
+        left: 0;
+        right: 0;
+        background: rgba(14, 161, 144, 0.9);
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        width: 80%;
+        max-width: 400px;
+        margin: 0 auto; /* Centrar el menú */
+    }
+
+    /* Mostrar el menú cuando se active */
+    .show-menu {
+        display: flex;
+    }
+
+    /* Mostrar el botón Back dentro del menú */
+    .show-menu .back-option {
+        display: block;
+        padding: 10px;
+        text-align: center;
+        background: #ffeb3b;
+        color: black;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    .back-option:hover {
+        background: #fbc02d;
+    }
+}
+
+
+
+/* Bigger Past Journal Button - Moved Lower */
+.past-journal {
+    display: inline-block;
+    margin-top: 40px; /* Increased margin to push it down */
+    padding: 15px 25px; 
+    background: #2575fc;
+    color: white;
+    font-size: 1.3em; 
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px; 
+    transition: background 0.3s ease, transform 0.2s ease-in-out;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2); 
+}    
+
+/* Hover Effect */
+.past-journal:hover {
+    background: #1e5cd6;
+    transform: scale(1.08); 
+}
+
+/* Active Click Effect */
+.past-journal:active {
+    transform: scale(0.96);
+}
+.journal-entries{
+    margin-top: 10px;
+    padding: 80px;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .past-journal {
+        padding: 12px 20px; 
+        font-size: 1.2em;
+        margin-top: 30px; /* Adjusted for smaller screens */
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .past-journal {
+        padding: 12px 20px; 
+        font-size: 1.2em;
+    }
+}
+
+
+/* Button Styling */
+button {
+    background: #2575fc;
+    color: white;
+    padding: 10px 15px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #1e5cd6;
+}
+
+/* Back Button */
+.back-button {
+    display: block;
+    margin: 40px auto; /* Centers it */
+    text-align: center;
+    width: 300px; /* Adjust width as needed */
+    padding: 10px 15px;
+    background: #2d53bd;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.back-button:hover {
+    background: #89a2e7;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+}
+
+
+/*footer*/
+footer {
+    background: linear-gradient(135deg, #0ea190, #0a7d6d);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 13rem;
+}
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.footer-column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin: 8px 0;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #ffeb3b;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+.social-icons a:hover {
+    color: #ffeb3b;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Asegurar que el body ocupe toda la pantalla */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hacer que el contenido principal crezca y empuje el footer hacia abajo */
+main {
+    flex: 1;
+}
+
+/* Estilos del footer */
+footer {
+    background: linear-gradient(135deg, #0ea190, #0a7d6d);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
+    height: 12rem;
+    border-radius: 10px;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    background-color: #e68900;
+    height: 2rem;
+    width: 100%; /* Mismo ancho del footer */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center; /* Centra el texto horizontalmente */
+    align-items: center; /* Centra el texto verticalmente */
+}

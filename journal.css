@@ -1,0 +1,344 @@
+/* Header & Navigation */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #6A7FDB; /* Soft Blue */
+    padding: 15px 0;
+    text-align: center;
+    color: white;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 20px 20px; /* Rounded bottom edges */
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Navigation Links */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover Effect */
+nav a:hover {
+    text-decoration: underline;
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Ensures links are clickable */
+nav a {
+    pointer-events: auto; 
+    z-index: 10; 
+}
+
+/* Prevent Header Overlapping Content */
+body {
+    padding-top: 80px;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+
+
+/* Posicionar el ícono de hamburguesa debajo del logo */
+.hamburger {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none; 
+    position: relative;
+    margin-top: 10px;
+}
+
+/* Estilos del Menú */
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+/* Ocultar el botón Back por defecto */
+.back-option {
+    display: none;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .hamburger {
+        display: block;
+        margin-top: 10px; 
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: rgba(14, 161, 144, 0.9);
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        width: 80%;
+        max-width: 400px;
+        margin: 0 auto; 
+    }
+
+    /* Mostrar el menú cuando se active */
+    .show-menu {
+        display: flex;
+    }
+
+    /* Mostrar el botón Back dentro del menú */
+    .show-menu .back-option {
+        display: block;
+        padding: 10px;
+        text-align: center;
+        background: #ffeb3b;
+        color: black;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    .back-option:hover {
+        background: #fbc02d;
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+}
+
+/* Main Section Styling */
+.main-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #6986a0;  /* Light blue background */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 7rem;
+}
+
+
+/* Sections inside the main container */
+.welcome, .mood-tracker, .journal {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+
+}
+
+.mood-tracker select, .journal textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.past-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.past-button {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    background: #2d53bd;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.past-button:hover {
+    background: #89a2e7;
+    transform: scale(1.05);
+}
+
+/* Back Button */
+.back-button {
+    display: block;
+    margin: 40px auto; /* Centers it */
+    text-align: center;
+    width: 300px; /* Adjust width as needed */
+    padding: 10px 15px;
+    background: #2d53bd;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.back-button:hover {
+    background: #89a2e7;
+}
+
+
+footer {
+    background: linear-gradient(135deg, #0ea190, #0a7d6d);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 13rem;
+}
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.footer-column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin: 8px 0;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #ffeb3b;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+.social-icons a:hover {
+    color: #ffeb3b;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Asegurar que el body ocupe toda la pantalla */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hacer que el contenido principal crezca y empuje el footer hacia abajo */
+main {
+    flex: 1;
+}
+
+/* Estilos del footer */
+footer {
+    background: linear-gradient(135deg, #0ea190, #0a7d6d);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
+    height: 12rem;
+    border-radius: 10px;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    background-color: #e68900;
+    height: 2rem;
+    width: 100%; /* Mismo ancho del footer */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center; /* Centra el texto horizontalmente */
+    align-items: center; /* Centra el texto verticalmente */
+}
+
+
