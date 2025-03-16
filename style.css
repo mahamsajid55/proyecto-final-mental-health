@@ -136,59 +136,214 @@ button:hover {
     }
 }
 
-.cta-button {
-    background-color: #FFB6B9; 
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    cursor: pointer;
+/* Features Section */
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers all feature boxes */
+    align-items: center;
+    gap: 50px; /* Increased space between boxes */
+    padding: 70px 8%; /* Increased padding for breathing room */
+    text-align: center;
+    background: linear-gradient(135deg, #f0e5ff, #cce7ff); /* Soft Purple to Blue */
+    border-radius: 15px;
+    box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.1);
 }
 
+/* Feature Box */
+.feature,
+.feature1,
+.feature2,
+.feature3 {
+    background: linear-gradient(135deg, #f8f8f0, #f8f6ef); /* Soft White to Light Cream */
+    padding: 35px; /* Increased padding */
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Ensures text is also centered */
+    width: 320px; /* Adjust width for a balanced look */
+    max-width: 90%;
+    margin: auto; 
+    text-align: center;
+}
+.feature,
+.feature1,
+.feature2,
+.feature3{
+    margin-top: 1.5rem;
+}
+
+/* Hover Effect */
+
+.feature:hover,
+.feature1:hover,
+.feature2:hover,
+.feature3:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #e6c75a, #fdcd0a);
+}
+
+/* Feature Heading */
+.feature h2, .feature h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Feature Description */
+.feature p {
+    font-size: 1.2em;
+    color: #444;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* CTA Button */
 .cta-button {
-    transition: background 0.3s ease, transform 0.2s ease;
+    background: linear-gradient(135deg, #ffcc00, #ffb300);
+    color: #333;
+    padding: 14px 22px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    margin-top: auto;
 }
 
 .cta-button:hover {
-    background: #ff9ea5;
-    transform: scale(1.05);
+    background: linear-gradient(135deg, #ffb300, #ffcc00);
+    transform: scale(1.1);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
 }
 
-.features {
+footer {
+    background: linear-gradient(135deg, #0ea190, #0a7d6d);
+    color: white;
+    padding: 40px 20px;
     text-align: center;
-    padding: 50px 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.feature {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 13rem;
+}
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
 }
 
-.feature:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+.footer-column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    padding-bottom: 5px;
 }
 
-.features h2 {
-    color: #6A7FDB;
-    margin-bottom: 20px;
+.footer-column ul {
+    list-style: none;
+    padding: 0;
 }
 
-.feature {
-    background: #ffffff;
+.footer-column ul li {
+    margin: 8px 0;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #ffeb3b;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+.social-icons a:hover {
+    color: #ffeb3b;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Asegurar que el body ocupe toda la pantalla */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hacer que el contenido principal crezca y empuje el footer hacia abajo */
+main {
+    flex: 1;
+}
+
+/* Estilos del footer */
+footer {
+    background: linear-gradient(135deg, #0ea190, #0a7d6d);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
+    height: 12rem;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 15px auto;
-    width: 250px;
-    text-align: center;
+    
 }
 
-.feature h3 {
-    color: #6A7FDB;
-}
-
-.feature p {
-    color: #3D3D3D;
+.footer-bottom {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    background-color: #e68900;
+    height: 2rem;
+    width: 100%; /* Mismo ancho del footer */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center; /* Centra el texto horizontalmente */
+    align-items: center; /* Centra el texto verticalmente */
 }
 

@@ -1,0 +1,364 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+    text-align: center;
+}
+
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(14, 161, 144, 0.8); 
+    padding: 15px 20px;
+    color: white;
+    border-radius: 10px;
+    backdrop-filter: blur(10px); 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Logo Styling */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.8em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    color: #ffeb3b;
+}
+
+/* Updated Navigation Styling */
+nav {
+    display: flex;
+    gap: 20px;
+    margin-right: 30px; 
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    white-space: nowrap; 
+}
+
+nav a:hover {
+    background: #ffeb3b;
+    color: #333;
+    transform: translateY(-3px);
+}
+
+/* Posicionar el ícono de hamburguesa debajo del logo */
+.hamburger {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none; 
+    position: relative;
+    margin-top: 10px;
+}
+
+/* Estilos del Menú */
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+/* Ocultar el botón Back por defecto */
+.back-option {
+    display: none;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .hamburger {
+        display: block;
+        margin-top: 10px; 
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px; 
+        left: 0;
+        right: 0;
+        background: rgba(14, 161, 144, 0.9);
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        width: 80%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    /* Mostrar el menú cuando se active */
+    .show-menu {
+        display: flex;
+    }
+
+    /* Mostrar el botón Back dentro del menú */
+    .show-menu .back-option {
+        display: block;
+        padding: 10px;
+        text-align: center;
+        background: #ffeb3b;
+        color: black;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    .back-option:hover {
+        background: #fbc02d;
+    }
+}
+
+
+/* Tips Section Styling */
+.tips {
+    background: #e0f7fa;
+    padding: 30px;
+    width: 80%;
+    max-width: 500px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 8rem;
+}
+
+.tips h2 {
+    color: #00796b;
+}
+
+#dailyTip {
+    font-size: 1.2em;
+    font-style: italic;
+    margin: 20px 0;
+}
+
+button {
+    background: #00796b;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #004d40;
+}
+
+/* Yoga Button Styling */
+.yoga-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background: #ff9800; /* Orange theme for Yoga */
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover Effect */
+.yoga-button:hover {
+    background: #e68900;
+    transform: scale(1.05);
+}
+
+/* Active Click Effect */
+.yoga-button:active {
+    transform: scale(0.96);
+}
+
+/* Back Button */
+.back-button {
+    display: block;
+    margin: 40px auto; /* Centers it */
+    text-align: center;
+    width: 300px; /* Adjust width as needed */
+    padding: 10px 15px;
+    background: #2d53bd;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.back-button:hover {
+    background: #89a2e7;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+}
+
+
+
+footer {
+    background: linear-gradient(135deg, #0ea190, #0a7d6d);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 13rem;
+}
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.footer-column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin: 8px 0;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #ffeb3b;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+.social-icons a:hover {
+    color: #ffeb3b;
+}
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Asegurar que el body ocupe toda la pantalla */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hacer que el contenido principal crezca y empuje el footer hacia abajo */
+main {
+    flex: 1;
+}
+
+/* Estilos del footer */
+footer {
+    background: linear-gradient(135deg, #0ea190, #0a7d6d);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
+    height: 12rem;
+    border-radius: 10px;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    background-color: #e68900;
+    height: 2rem;
+    width: 100%; /* Mismo ancho del footer */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center; /* Centra el texto horizontalmente */
+    align-items: center; /* Centra el texto verticalmente */
+}
