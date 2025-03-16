@@ -48,13 +48,4 @@ document.getElementById("darkModeToggle").addEventListener("click", function () 
     document.body.classList.toggle("dark-mode");
 });
 
-let index = 0;
 
-function nextSlide() {
-    const slides = document.querySelectorAll(".slide");
-    index = (index + 1) % slides.length;
-    document.querySelector(".slider").style.transform = `translateX(-${index * 100}%)`;
-}
-
-// Auto-slide every 3 seconds
-setInterval(nextSlide, 3000);
