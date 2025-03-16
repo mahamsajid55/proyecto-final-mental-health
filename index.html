@@ -18,13 +18,23 @@
             <a href="#">📚 Resources</a>
         </nav>
     </header>
-
-    <section class="hero">
-        <h2>Welcome to Your Safe Space</h2>
-        <p>Track your mood, talk to an AI chatbot, and practice mental wellness exercises.</p>
-        <button class="cta-button" onclick="window.location.href='chat.html'">Start Now</button>
-
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1>Your Mental Health Matters</h1>
+        <p>Take a moment for yourself and start your journey to well-being.</p>
+        <a href="journey.html">
+            <button id="startJourney">Start Your Journey</button>
+        </a>
     </section>
+
+       <!-- Motivational Quotes Section -->
+       <section id="quote-section">
+        <h2>💙 Daily Motivation 💙</h2>
+        <p id="motivational-quote">"Your mental health is a priority."</p>
+        <button onclick="showRandomQuote()">💡 New Quote</button>
+    </section>
+
+
     <section class="features">
         <h2>🌟 How This App Can Help You</h2>
         <div class="feature">
@@ -50,12 +60,6 @@
             <p>Calming exercises to help you relax and relieve stress.</p>
         </div>
     </section>
-    
-    <section class="quote">
-        <p>💙 "Your mental health matters. Take it one day at a time." 💙</p>
-    </section>
-    
-
 
     <script src="script.js"></script>
 </body>
