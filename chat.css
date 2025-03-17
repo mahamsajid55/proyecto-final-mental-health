@@ -4,7 +4,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #6A7FDB; /* Soft Blue */
+    background-color:#0ea190;
     padding: 15px 0;
     text-align: center;
     color: white;
@@ -76,7 +76,7 @@ body {
 
 /* Chat Header */
 .chat-header {
-    background: #6A7FDB;
+    background: #1a9c8d;
     color: white;
     padding: 10px;
     border-radius: 10px;
@@ -103,17 +103,6 @@ body {
     animation: slideIn 0.3s ease-out;
 }
 
-.user-message {
-    background: #6A7FDB;
-    color: white;
-    align-self: flex-end;
-}
-
-.bot-message {
-    background: #FFB6B9;
-    color: black;
-}
-
 /* Chat Input */
 .chat-input {
     display: flex;
@@ -132,7 +121,7 @@ body {
 .chat-input button {
     padding: 10px;
     border: none;
-    background: #6A7FDB;
+    background: #20887c;
     color: white;
     border-radius: 5px;
     cursor: pointer;
@@ -140,7 +129,7 @@ body {
 }
 
 .chat-input button:hover {
-    background: #5568c2;
+    background: #425351;
 }
 
 /* Animations */

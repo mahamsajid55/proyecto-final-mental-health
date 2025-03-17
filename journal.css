@@ -4,7 +4,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #6A7FDB; /* Soft Blue */
+    background-color: #0ea190;
     padding: 15px 0;
     text-align: center;
     color: white;
@@ -96,22 +96,6 @@ nav {
         margin-top: 10px; 
     }
 
-    nav {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        right: 0;
-        background: rgba(14, 161, 144, 0.9);
-        padding: 15px;
-        border-radius: 10px;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-        width: 80%;
-        max-width: 400px;
-        margin: 0 auto; 
-    }
-
     /* Mostrar el menú cuando se active */
     .show-menu {
         display: flex;
@@ -152,7 +136,7 @@ nav {
     max-width: 800px;
     margin: 40px auto;
     padding: 20px;
-    background: #6986a0;  /* Light blue background */
+    background: #edfdfb;  
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     text-align: center;
@@ -170,7 +154,7 @@ nav {
 
 /* Mood Tracker & Journal Section Styling */
 .mood-tracker, .journal {
-    background: hsl(207, 20%, 57%);
+    background: #116b61;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);

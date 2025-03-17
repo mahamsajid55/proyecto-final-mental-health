@@ -13,7 +13,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #084750; 
+    background-color: #0ea190; 
     padding: 15px 0;
     text-align: center;
     color: white;
@@ -66,7 +66,7 @@ nav a {
 /* Hero Section */
 #hero {
     padding: 50px;
-    background: linear-gradient(to right, #448d87, #084750);
+    background: linear-gradient(to right, #448d87, #0ea190);
     color: white;
     margin-top: 7rem;
     border-radius: 8px;
