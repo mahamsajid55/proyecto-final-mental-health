@@ -4,7 +4,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #0ea190;
+    background: #c0ba99;  
     padding: 15px 0;
     text-align: center;
     color: white;
@@ -136,7 +136,7 @@ nav {
     max-width: 800px;
     margin: 40px auto;
     padding: 20px;
-    background: #edfdfb;  
+    background: #d8cba7;  
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     text-align: center;
@@ -154,7 +154,7 @@ nav {
 
 /* Mood Tracker & Journal Section Styling */
 .mood-tracker, .journal {
-    background: #116b61;
+    background: #e6e2bd;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -168,7 +168,7 @@ nav {
 #moodSelect {
     padding: 10px;
     font-size: 1.1em;
-    border: 2px solid #f4a261;
+    border: 2px solid #442c18;
     border-radius: 8px;
     background: #fff8e1;
     cursor: pointer;
@@ -176,7 +176,7 @@ nav {
 }
 
 #moodSelect:hover {
-    background: #ffebcd;
+    background: #d6bb93;
 }
 
 /* Save Mood & Save Journal Buttons */
@@ -212,6 +212,10 @@ nav {
     margin-bottom: 10px;
 }
 
+textarea{
+    border: 2px solid #14110e;
+
+}
 /* Past Journal Button */
 .past-button {
     display: inline-block;
@@ -249,16 +253,6 @@ nav {
     background: #89a2e7;
 }
 
-
-footer {
-    background: linear-gradient(135deg, #0ea190, #0a7d6d);
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
-}
 
 .footer-container {
     display: flex;
@@ -351,7 +345,7 @@ main {
 
 /* Estilos del footer */
 footer {
-    background: linear-gradient(135deg, #0ea190, #0a7d6d);
+    background: linear-gradient(135deg, #c0ba99, #d8cba7);
     color: white;
     padding: 40px 20px;
     text-align: center;
